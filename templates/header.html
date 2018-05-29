@@ -1,0 +1,8 @@
+<div class="pure-menu pure-menu-horizontal">
+		<a href="{{url_for('showCatalog')}}" class="pure-menu-heading">Home</a>
+		{%if 'username' not in session %}
+			<a href="{{url_for('showLogin')}}" class="pure-menu-heading">Login</a>
+		{% else %}
+			<a href="{{url_for('disconnect')}}" class="pure-menu-heading">Logout</a>
+		{% endif %}
+</div>

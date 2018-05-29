@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div>
+	<h2> Are you sure you want to delete {{category.name}}? </h2>
+</div>
+
+<div>
+	<form action="#" method = 'post'>
+		<button class="button-choose pure-button" type="submit" id="submit" type="submit">
+			Delete
+		</button>
+		<a href = '{{url_for('showCatalog')}}'>
+			<button class="button-choose pure-button" type="button">
+				Cancel
+			</button>
+		</a>
+	</form>
+</div>
+
+{% endblock %}

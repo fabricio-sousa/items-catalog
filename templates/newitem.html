@@ -1,0 +1,37 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div>
+  <h1>New Item</h1>
+</div>
+
+<div class="pane">
+  <form action="#" method="post">
+    <div>
+      <p>
+        <label for="name">Name:</label>
+      </p>
+      <input type="text" maxlength="50" name="name" placeholder="Name of the item">
+    </div>
+    <div>
+      <p>
+        <label for="description">Description:</label>
+      </p>
+      <textarea maxlength="250" rows="3" name="description" placeholder="Description of the item"></textarea>
+    </div>
+    <div>
+      <p>
+        <label for="description">Picture URL:</label>
+      </p>
+      <textarea maxlength="450" rows="1" name="picture_url" placeholder="Picture URL"></textarea>
+    </div>
+    <div>
+      <button class="button-choose pure-button" type="submit" id="submit">
+        Create
+      </button>
+    </div>
+  </form>
+</div>
+
+{% endblock %}

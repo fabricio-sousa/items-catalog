@@ -1,6 +1,6 @@
 # Items Catalog Project #
 
-The Live version of project can be found Here.
+The Live version of project can be found [here](http://ec2-18-221-122-149.us-east-2.compute.amazonaws.com/)
 
 ## Introduction ##
 
